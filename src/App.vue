@@ -139,6 +139,19 @@
         </v-img>
 
       </v-section>
+      <v-section class="portfolio">
+        <h4 class="display-2 text-center">Portfolio</h4>
+        <v-slide-group class="pa-4" active-class="success" show-srrows>
+          <v-slider-item v-for="(slider, index) in sliders" :key="index">
+            <v-card height="250" width="250" class="mx-2">
+              <img height="100%" width="100%" :src="slider">
+            </v-card>
+          </v-slider-item>
+
+        </v-slide-group>
+
+
+      </v-section>
 
 
     </v-main>
@@ -185,12 +198,12 @@ export default {
     ],
     sliders: [
 
-      '../public/images/slider1 (1).jpg',
-      '../public/images/slider1 (2).jpg',
-      '../public/images/slider1 (3).jpg',
-      '../public/images/slider1 (4).jpg',
-      '../public/images/expeienceOffice.jpg',
-      '../public/images/officePhoto.jpg',
+      'https://picsum.photos/200/100',
+      'https://picsum.photos/200/600',
+      'https://picsum.photos/200/200',
+      'https://picsum.photos/200/400',
+      'https://picsum.photos/200',
+      'https://picsum.photos/200/300',
     ]
 
 
