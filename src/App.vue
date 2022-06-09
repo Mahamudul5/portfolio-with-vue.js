@@ -152,6 +152,34 @@
 
 
       </v-section>
+      <v-section class="contact-us pt-10">
+        <v-img class="pt-10" gradient="to bottom, rgb(166 199 156),rgb(227 227 227)" src="../public/images/green.jpg">
+          <v-container>
+            <h4 class="display-1 text-center mb-5">
+              I am a frontend web developer .I live in Dhaka, bangladesh. I also work remote job all over the world.
+            </h4>
+            <v-divider />
+            <br>
+            <v-row>
+              <v-col cols="12" lg="6">
+                <v-card-title>DROP A LINE</v-card-title>
+                <v-form>
+                  <v-text-field label="Your Name" />
+                  <v-text-field label="Email" />
+                  <v-text-field label="Subject" />
+                  <v-textarea label="message" />
+                  <v-btn large color="green" class="white--text">Send message</v-btn>
+                </v-form>
+
+              </v-col>
+            </v-row>
+
+
+          </v-container>
+        </v-img>
+
+
+      </v-section>
 
 
     </v-main>
