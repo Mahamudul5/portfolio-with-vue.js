@@ -114,6 +114,31 @@
         </v-container>
 
       </v-section>
+      <v-section class="exprience py-6">
+        <v-img class="pa-10 " gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+          src="../public/images/expeienceOffice.jpg">
+          <v-container>
+            <h4 class="display-2 text-center">Expriences</h4>
+            <v-timeline>
+              <v-timeline-item v-for="(exper, index) in exprience" :key="index"
+                :color="index % 2 === 0 ? 'pink' : 'green'">
+                <v-card class="rounded-xl">
+                  <v-card-title :color="index % 2 === 0 ? 'pink' : 'green'">
+                    {{ exper.title }}
+                  </v-card-title>
+                  <v-card-text>
+                    <b>{{ exper.date }}</b><br>
+                    <b>@{{ exper.institute }}</b><br>
+                  </v-card-text>
+                </v-card>
+
+              </v-timeline-item>
+            </v-timeline>
+          </v-container>
+
+        </v-img>
+
+      </v-section>
 
 
     </v-main>
@@ -136,6 +161,27 @@ export default {
       { title: 'VUETIFY', value: 65, color: 'black' },
       { title: 'REACT.JS', value: 90, color: 'red' },
       { title: 'TAILWIND', value: 90, color: 'yellow' },
+    ],
+    exprience: [
+
+      {
+        title: 'Frontend web developer',
+        date: 'june 2022 to present',
+        institute: 'Aua Tecnology'
+
+      },
+      {
+        title: 'Trainer',
+        date: 'feburary 2020 to dec 2020',
+        institute: 'LEDP-project,ICT Division'
+
+      },
+      {
+        title: 'trainer',
+        date: 'march 2019 to dec 2019',
+        institute: 'ICT Division'
+
+      }
     ]
 
   }),
