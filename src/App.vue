@@ -191,9 +191,15 @@
 
           </v-container>
         </v-img>
-
+        <v-footer clas="mt-4">
+          <v-col class="text-center" cols="12">
+            <strong>Copyright &copy;2022 |All right reserved |This is made by <a href="" class="green--text">Mahamudul
+                hasan</a></strong>
+          </v-col>
+        </v-footer>
 
       </v-section>
+
 
 
     </v-main>
