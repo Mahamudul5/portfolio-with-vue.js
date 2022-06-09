@@ -83,6 +83,37 @@
         </v-img>
 
       </v-section>
+      <v-section class="education py-6">
+        <v-container>
+          <h4 class="display-2 text-center">Education</h4>
+          <v-row class="py-8">
+            <v-col cols="12" lg="6">
+              <v-card class="pa-6 rounded-xl" elevation="5">
+                <div class="d-flex align-center justify-space-between">
+                  <div class="">
+                    <h2>Computer Science</h2>
+                    <span>march 2016 to december 2019</span>
+                  </div>
+                  <a class="green-text">at East West University<v-icon color="green">mdi-link</v-icon></a>
+                </div>
+              </v-card>
+            </v-col>
+            <v-col cols="12" lg="6">
+              <v-card class="pa-6 rounded-xl" elevation="5">
+                <div class="d-flex align-center justify-space-between">
+                  <div class="">
+                    <h2>H.S.C (Science)</h2>
+                    <span>jan 2013 to december 2015</span>
+                  </div>
+                  <a class="green-text">at Rangpur college<v-icon color="green">mdi-link</v-icon></a>
+                </div>
+              </v-card>
+            </v-col>
+
+          </v-row>
+        </v-container>
+
+      </v-section>
 
 
     </v-main>
