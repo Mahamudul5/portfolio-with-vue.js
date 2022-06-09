@@ -172,6 +172,20 @@
                 </v-form>
 
               </v-col>
+              <v-col cols="12" lg="3" offset="2">
+                <v-card-title>CONTACT ME</v-card-title>
+                <v-card-text>
+                  12/19 west razabazar,Dhaka <br>
+                  +8801581202776 <br>
+                  mahamudulhasaan5@gmail.com<br>
+                </v-card-text>
+                <v-card-actions>
+                  <v-btn large elevation="5" color="green" class="white--text mt-10 px-10 py-5">Download Resume
+                    <v-icon>mdi-download</v-icon>
+                  </v-btn>
+                </v-card-actions>
+
+              </v-col>
             </v-row>
 
 
