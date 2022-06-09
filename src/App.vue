@@ -182,7 +182,17 @@ export default {
         institute: 'ICT Division'
 
       }
+    ],
+    sliders: [
+
+      '../public/images/slider1 (1).jpg',
+      '../public/images/slider1 (2).jpg',
+      '../public/images/slider1 (3).jpg',
+      '../public/images/slider1 (4).jpg',
+      '../public/images/expeienceOffice.jpg',
+      '../public/images/officePhoto.jpg',
     ]
+
 
   }),
 };
