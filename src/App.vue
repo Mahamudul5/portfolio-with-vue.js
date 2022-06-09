@@ -45,12 +45,45 @@
             </v-row>
           </v-col>
           <v-col lg="6" cols="6">
-
             <v-img src="../public/images/myProfileR.png"></v-img>
           </v-col>
         </v-row>
+      </v-section>
+      <v-section class="about-me" id="about">
+        <v-img class="pa-10" height="400" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+          src="../public/images/officePhoto.jpg">
+          <v-row justify="center" class="align-center">
+            <v-col lg="6" cols="6">
+              <v-card class="text-center pa-6 rounded-lg" color="#e1e0e0c9" elevation="6">
+                <v-card-subtitle class="green--text ">ABOUT MYSELF</v-card-subtitle>
+                <h2 class="display-1 font-weight-regular">I am frontend web developer. I already complete some projects.
+                  I am working with react.js, vue.js, tailwind, vuetify etc.</h2>
+
+                <v-btn large elevation="5" color="green" class="white--text mt-10 px-10 py-5">Download Resume
+                  <v-icon>mdi-download</v-icon>
+                </v-btn>
+              </v-card>
+            </v-col>
+            <v-col lg="6" cols="6">
+              <v-card class="pa-6 rounded-lg" color="#e1e0e0c9" elevation="6">
+                <div class="py-1" v-for="(item, index) in items" :key="index">
+                  <label>{{ item.title }}</label>
+                  <v-progress-linear :color="item.color" height="10" :value="item.value">
+
+                  </v-progress-linear>
+
+                </div>
+
+              </v-card>
+            </v-col>
+
+
+          </v-row>
+
+        </v-img>
 
       </v-section>
+
 
     </v-main>
 
@@ -63,7 +96,17 @@
 export default {
   name: 'App',
   data: () => ({
-    //
+    drawer: null,
+    items: [
+      { title: 'HTML', value: 100, color: 'light-blue' },
+      { title: 'CSS', value: 85, color: 'deep-orange' },
+      { title: 'JAVASCRIPT', value: 70, color: 'light-green' },
+      { title: 'VUE.JS', value: 80, color: 'blue' },
+      { title: 'VUETIFY', value: 65, color: 'black' },
+      { title: 'REACT.JS', value: 90, color: 'red' },
+      { title: 'TAILWIND', value: 90, color: 'yellow' },
+    ]
+
   }),
 };
 </script>
